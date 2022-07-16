@@ -1,888 +1,1741 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en">
+
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2113.5">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
-    span.Apple-tab-span {white-space:pre}
-  </style>
+
+	<meta name="robots" content="all" />
+
+	<meta name="keywords" content="ios, android, mobile, izmir, swift, swiftUI">
+
+	<meta name="Author" content="Atakan Cengiz KURT, atakancengizkurt@gmail.com">
+
+	<meta name="Publisher" content="Atakan Cengiz KURT 2019" />
+
+	<meta name="reply-to" content="atakancengizkurt@gmail.com" />
+
+	<meta name="Copyright" content="© 2019 Atakan Cengiz KURT | iOS Developer">
+
+	<meta content='Atakan Cengiz KURT' name='description'/>
+
+	<meta content='https://www.atakancengizkurt.com.tr' property='og:url'/>
+
+	<meta content='iOS Developer' property='og:title'/>
+
+	<meta content='Atakan Cengiz KURT - iOS Developer' property='og:description'/>
+
+    <title>iOS Developer | Atakan Cengiz KURT</title>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/animate.css">
+
+
+
+<link href='https://www.atakancengizkurt.com/favicon.ico' rel='icon' type='image/x-icon'/>
+
+<link href='https://www.atakancengizkurt.com/' rel='canonical'/>
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+
+
+    <link rel="stylesheet" href="css/aos.css">
+
+
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+
+
+
+    <link rel="stylesheet" href="css/flaticon.css">
+
+    <link rel="stylesheet" href="css/icomoon.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
-<body>
-<p class="p1">&lt;!DOCTYPE html&gt;</p>
-<p class="p1">&lt;html lang="en"&gt;</p>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>&lt;meta name="robots" content="all" /&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>&lt;meta name="keywords" content="ios, android, mobile, izmir, swift, swiftUI"&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>&lt;meta name="Author" content="Atakan Cengiz KURT, atakancengizkurt@gmail.com"&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>&lt;meta name="Publisher" content="Atakan Cengiz KURT 2019" /&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>&lt;meta name="reply-to" content="atakancengizkurt@gmail.com" /&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>&lt;meta name="Copyright" content="© 2019 Atakan Cengiz KURT | iOS Developer"&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>&lt;meta content='Atakan Cengiz KURT' name='description'/&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>&lt;meta content='https://www.atakancengizkurt.com.tr' property='og:url'/&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>&lt;meta content='iOS Developer' property='og:title'/&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>&lt;meta content='Atakan Cengiz KURT - iOS Developer' property='og:description'/&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;iOS Developer | Atakan Cengiz KURT&lt;/title&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="utf-8"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet"&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;link rel="stylesheet" href="css/open-iconic-bootstrap.min.css"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;link rel="stylesheet" href="css/animate.css"&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;link href='https://www.atakancengizkurt.com/favicon.ico' rel='icon' type='image/x-icon'/&gt;</p>
-<p class="p1">&lt;link href='https://www.atakancengizkurt.com/' rel='canonical'/&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;link rel="stylesheet" href="css/owl.carousel.min.css"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;link rel="stylesheet" href="css/owl.theme.default.min.css"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;link rel="stylesheet" href="css/magnific-popup.css"&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;link rel="stylesheet" href="css/aos.css"&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;link rel="stylesheet" href="css/ionicons.min.css"&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;link rel="stylesheet" href="css/flaticon.css"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;link rel="stylesheet" href="css/icomoon.css"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;link rel="stylesheet" href="css/style.css"&gt;</p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p1">&lt;body data-spy="scroll" data-target=".site-navbar-target" data-offset="300"&gt;</p>
-<p class="p2"><br></p>
-<p class="p2"><br></p>
-<p class="p1">&lt;nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="container"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;a class="navbar-brand" href="index.html"&gt;&lt;span&gt;A&lt;/span&gt;takan Cengiz KURT&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"</p>
-<p class="p1"><span class="Apple-converted-space">                </span>data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;span class="oi oi-menu"&gt;&lt;/span&gt; Menu</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/button&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="collapse navbar-collapse" id="ftco-nav"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;ul class="navbar-nav nav ml-auto"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;li class="nav-item"&gt;&lt;a href="#home-section" class="nav-link"&gt;&lt;span&gt;Home&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;li class="nav-item"&gt;&lt;a href="#about-section" class="nav-link"&gt;&lt;span&gt;About&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;li class="nav-item"&gt;&lt;a href="#resume-section" class="nav-link"&gt;&lt;span&gt;Experiences&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;li class="nav-item"&gt;&lt;a href="#services-section" class="nav-link"&gt;&lt;span&gt;Services&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;li class="nav-item"&gt;&lt;a href="#projects-section" class="nav-link"&gt;&lt;span&gt;Portfolio&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;li class="nav-item"&gt;&lt;a href="#blog-section" class="nav-link"&gt;&lt;span&gt;My Blog&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;li class="nav-item"&gt;&lt;a href="#contact-section" class="nav-link"&gt;&lt;span&gt;Contact&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;li class="nav-item"&gt;&lt;a href="https://apps.apple.com/us/developer/atakan-cengiz-kurt/id1480593937" target="_blank" class="nav-link"&gt;&lt;span&gt;My Apps&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                </span></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p1">&lt;/nav&gt;</p>
-<p class="p1">&lt;section class="hero-wrap js-fullheight"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="overlay"&gt;&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="container"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="row no-gutters slider-text js-fullheight justify-content-center align-items-center"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="col-lg-8 col-md-6 ftco-animate d-flex align-items-center"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="text text-center"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span class="subheading"&gt;Hey! I am&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h1&gt;Atakan Cengiz KURT&lt;/h1&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h2&gt;I'm an</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span</p>
-<p class="p1"><span class="Apple-converted-space">                                </span>class="txt-rotate"</p>
-<p class="p1"><span class="Apple-converted-space">                                </span>data-period="2000"</p>
-<p class="p1"><span class="Apple-converted-space">                                </span>data-rotate='[ "iOS Developer.", "Apple Developer." ]'&gt;&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;!--</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="mouse"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="#" class="mouse-icon"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="mouse-wheel"&gt;&lt;span class="ion-ios-arrow-round-down"&gt;&lt;/span&gt;&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;--&gt;</p>
-<p class="p1">&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;section class="ftco-about img ftco-section ftco-no-pt ftco-no-pb" id="about-section"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="container"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="row d-flex no-gutters"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="col-md-6 col-lg-6 d-flex"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="img-about img d-flex align-items-stretch"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="overlay"&gt;&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="img d-flex align-self-stretch align-items-center"</p>
-<p class="p1"><span class="Apple-converted-space">                         </span>style="background-image:url(images/Atakan-Cengiz-KURT.JPG);"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="col-md-6 col-lg-6 pl-md-5 py-5"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="row justify-content-start pb-3"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="col-md-12 heading-section ftco-animate"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h1 class="big"&gt;About&lt;/h1&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h2 class="mb-4"&gt;About Me&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p&gt;I'm a iOS Developer of experience with iOS (Swift) development. Proficiency with</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>applications for iOS devices. I have a strong understanding of the patterns and practices</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>that revolve around the iOS platform. I make it my goal to create a user interface</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>experience. Excellent interpersonal and communication abilities, and possess a wide range of</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>technical skills. &lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;ul class="about-info mt-4 px-md-0 px-2"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li class="d-flex"&gt;&lt;span&gt;Name:&lt;/span&gt; &lt;span&gt;Atakan Cengiz KURT&lt;/span&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li class="d-flex"&gt;&lt;span&gt;Address:&lt;/span&gt; &lt;span&gt;İzmir, TURKEY&lt;/span&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                          </span>&lt;li class="d-flex"&gt;&lt;span&gt;Email:&lt;/span&gt; &lt;span&gt; &lt;a href="mailto: atakancengizkurt@gmail.com"&gt; Send E-mail&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li class="d-flex"&gt;&lt;span&gt;Phone: &lt;/span&gt; &lt;span&gt;&lt;a href="tel://+905066564825"&gt; +90-506-656-48-25&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="counter-wrap ftco-animate d-flex mt-md-3"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="text"&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p class="mb-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                          </span>&lt;span class="number" data-number="21"&gt;0&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                          </span>&lt;span&gt;Project completed&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                      </span>&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p&gt;&lt;a href="https://drive.google.com/file/d/1UwDzA1VLBQ-hA6oMuVzzSBcj8qzXvQSz/view?usp=sharing" target="_blank" class="btn btn-primary py-3 px-3"&gt;Download CV&lt;/a&gt; -<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;a href="https://medium.com/@atakancengizkurt" target="_blank" class="btn btn-primary py-3 px-3"&gt;Medium&lt;/a&gt;&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p&gt; &lt;a href="https://www.linkedin.com/in/atakancengizkurt/" target="_blank" class="btn btn-primary py-3 px-3"&gt;&lt;i</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>class="icon-linkedin"&gt;&lt;/i&gt; LinkedIn&lt;/a&gt;<span class="Apple-converted-space">  </span>- <span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;a href="https://github.com/atakancengizkurt" target="_blank" class="btn btn-primary py-3 px-3"&gt;&lt;i class="icon-github"&gt;&lt;/i&gt; GitHub&lt;/a&gt;&lt;/p&gt;<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;p&gt;My Projects:<span class="Apple-converted-space">  </span>&lt;p&gt;<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;a href="https://apps.apple.com/tr/developer/atakan-cengiz-kurt/id1480593937" target="_blank" class="btn btn-primary py-3 px-3"&gt;&lt;i class="icon-apple"&gt;&lt;/i&gt; AppStore&lt;/a&gt; -<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;a href="https://play.google.com/store/apps/developer?id=Atakan+Cengiz+KURT" target="_blank" class="btn btn-primary py-3 px-3"&gt;&lt;i</p>
-<p class="p1"><span class="Apple-converted-space">                                </span>class="icon-android"&gt;&lt;/i&gt; PlayStore&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p1">&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p2"><br></p>
-<p class="p1">&lt;section class="ftco-section ftco-no-pb goto-here" id="resume-section"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="container"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="row"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="col-md-3"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;nav id="navi"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;li&gt;&lt;a href="#page-2"&gt;Experiences&lt;/a&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;li&gt;&lt;a href="#page-3"&gt;Skills&lt;/a&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/nav&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="col-md-9"&gt;</p>
-<p class="p2"><br></p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div id="page-2" class="page two"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h2 class="heading"&gt;Experiences&lt;/h2&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                    </span></p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="resume-wrap d-flex ftco-animate"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="icon d-flex align-items-center justify-content-center"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="flaticon-ideas"&gt;&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="text pl-3"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="date"&gt;2021-Present&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;h2&gt;iOS Developer&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="position"&gt;Loodos Tech&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;p&gt;Development Vodafone Yanımda with Native iOS (Swift)&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                    </span></p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="resume-wrap d-flex ftco-animate"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="icon d-flex align-items-center justify-content-center"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="flaticon-ideas"&gt;&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="text pl-3"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="date"&gt;2020-2021&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;h2&gt;Mobile Developer&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="position"&gt;Rapsodo Pte. Ltd.&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;p&gt;Developed Golf Digest Schools App with Native Android (Kotlin) and Native iOS (Swift) to Discovery Channel&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;div class="resume-wrap d-flex ftco-animate"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="icon d-flex align-items-center justify-content-center"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="flaticon-ideas"&gt;&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="text pl-3"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="date"&gt;2018-2020&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;h2&gt;iOS Developer&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="position"&gt;Merena Bilişim A.Ş.&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;p&gt;Developed Zuppin application that in transportation industry, Procend application that in game lobby. I had been used Websocket platform, Restfull Api, Map &amp; Location.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="resume-wrap d-flex ftco-animate"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="icon d-flex align-items-center justify-content-center"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="flaticon-ideas"&gt;&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="text pl-3"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="date"&gt;2016-2018&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;h2&gt;iOS Developer&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="position"&gt;Freelance App Developer&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;p&gt;Canmoti&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;p&gt;Aktuel Market indirim kampanya&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;p&gt;Banka Kurları&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;p&gt;Şafak Sayar Askerlik&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;p&gt;CanVote&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;p&gt;Sena Denetim&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;p&gt;Sena Rehber&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="resume-wrap d-flex ftco-animate"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="icon d-flex align-items-center justify-content-center"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="flaticon-ideas"&gt;&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="text pl-3"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="date"&gt;2016-2018&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;h2&gt;Project Manager&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="position"&gt;Levent Lostra&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;p&gt;Creating and managing ERP system&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div id="page-3" class="page three"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h2 class="heading"&gt;Skills&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="row progress-circle mb-5"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="col-lg-4 mb-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="bg-white rounded-lg shadow p-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                </span>&lt;h2 class="h5 font-weight-bold text-center mb-4"&gt;Swift&lt;/h2&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                                </span>&lt;div class="progress mx-auto" data-value='90'&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">          </span>&lt;span class="progress-left"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="progress-bar border-primary"&gt;&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">          </span>&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;span class="progress-right"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="progress-bar border-primary"&gt;&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">          </span>&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                        </span>&lt;div class="h2 font-weight-bold"&gt;90&lt;sup class="small"&gt;%&lt;/sup&gt;&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="col-lg-4 mb-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="bg-white rounded-lg shadow p-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                </span>&lt;h2 class="h5 font-weight-bold text-center mb-4"&gt;Kotlin&lt;/h2&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                                </span>&lt;div class="progress mx-auto" data-value='80'&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">          </span>&lt;span class="progress-left"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="progress-bar border-primary"&gt;&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">          </span>&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;span class="progress-right"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="progress-bar border-primary"&gt;&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">          </span>&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                        </span>&lt;div class="h2 font-weight-bold"&gt;80&lt;sup class="small"&gt;%&lt;/sup&gt;&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="col-lg-4 mb-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="bg-white rounded-lg shadow p-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                </span>&lt;h2 class="h5 font-weight-bold text-center mb-4"&gt;Sketch&lt;/h2&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                                </span>&lt;div class="progress mx-auto" data-value='95'&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">          </span>&lt;span class="progress-left"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="progress-bar border-primary"&gt;&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">          </span>&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;span class="progress-right"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="progress-bar border-primary"&gt;&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">          </span>&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                        </span>&lt;div class="h2 font-weight-bold"&gt;95&lt;sup class="small"&gt;%&lt;/sup&gt;&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="row"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="col-md-6 animate-box"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="progress-wrap ftco-animate"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                </span>&lt;h3&gt;UIKit &amp; Animation&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                </span>&lt;div class="progress"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;div class="progress-bar color-1" role="progressbar" aria-valuenow="90"</p>
-<p class="p1"><span class="Apple-converted-space">                                         </span>aria-valuemin="0" aria-valuemax="100" style="width:90%"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                        </span>&lt;span&gt;90%&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="col-md-6 animate-box"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="progress-wrap ftco-animate"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                </span>&lt;h3&gt;MVVM &amp; MVC&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                </span>&lt;div class="progress"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;div class="progress-bar color-2" role="progressbar" aria-valuenow="85"</p>
-<p class="p1"><span class="Apple-converted-space">                                         </span>aria-valuemin="0" aria-valuemax="100" style="width:85%"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                        </span>&lt;span&gt;85%&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="col-md-6 animate-box"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="progress-wrap ftco-animate"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                </span>&lt;h3&gt;Adobe Xd&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                </span>&lt;div class="progress"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;div class="progress-bar color-3" role="progressbar" aria-valuenow="95"</p>
-<p class="p1"><span class="Apple-converted-space">                                         </span>aria-valuemin="0" aria-valuemax="100" style="width:95%"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                        </span>&lt;span&gt;95%&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="col-md-6 animate-box"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="progress-wrap ftco-animate"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                </span>&lt;h3&gt;Core Data &amp; Sql Lite&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                </span>&lt;div class="progress"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;div class="progress-bar color-4" role="progressbar" aria-valuenow="90"</p>
-<p class="p1"><span class="Apple-converted-space">                                         </span>aria-valuemin="0" aria-valuemax="100" style="width:90%"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                        </span>&lt;span&gt;90%&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p1">&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;section class="ftco-section" id="services-section"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="container-fluid px-md-5"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="row justify-content-center py-5 mt-5"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="col-md-12 heading-section text-center ftco-animate"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;h1 class="big big-2"&gt;Services&lt;/h1&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;h2 class="mb-4"&gt;Services&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">               </span>&lt;!--&lt;p&gt;In addition to mobile development, I work with my freelance team for software solutions in other technologies.&lt;/p&gt;--&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="row"&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;div class="col-md-4 text-center d-flex ftco-animate" class="services-1 shadow" style="cursor: pointer"&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;a<span class="Apple-converted-space">  </span>class="services-1 shadow" style="cursor: pointer"&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;span class="icon"&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;i class="flaticon-innovation"&gt;&lt;/i&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;div class="desc"&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;h3 class="mb-5"&gt;App Development&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;p&gt;Mobile Application Development&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="col-md-4 text-center d-flex ftco-animate"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;a class="services-1 shadow" style="cursor: pointer"&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;span class="icon"&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;i class="flaticon-ux-design"&gt;&lt;/i&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="desc"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h3 class="mb-5"&gt;App Design&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p&gt;Design work for mobile application&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="col-md-4 text-center d-flex ftco-animate"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;a<span class="Apple-converted-space">  </span>class="services-1 shadow" style="cursor: pointer"&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;span class="icon"&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;i class="flaticon-analysis"&gt;&lt;/i&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="desc"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h3 class="mb-5"&gt;ASO&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p&gt;App Store Optimization&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p2"><br></p>
-<p class="p2"><br></p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p1">&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p2"><br></p>
-<p class="p1">&lt;section class="ftco-section ftco-project" id="projects-section"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="container-fluid px-md-0"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="row no-gutters justify-content-center pb-5"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="col-md-12 heading-section text-center ftco-animate"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;h1 class="big big-2"&gt;Portfolio&lt;/h1&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;h2 class="mb-4"&gt;Portfolio&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="row no-gutters"&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        <span class="Apple-tab-span">	</span></span>&lt;!-- https://apps.apple.com/tr/app/zuppin-fleet/id1400166596--&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        <span class="Apple-tab-span">	</span></span>&lt;div class="col-md-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            <span class="Apple-tab-span">	</span></span>&lt;div class="ftco-animate" style="position: absolute; z-index: 2; margin: 8px;"&gt;<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">            <span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span>&lt;a href="https://apps.apple.com/tr/app/zuppin-fleet/id1400166596" target="_blank"&gt; &lt;i class="btn btn-primary icon-apple"&gt;&lt;/i&gt;&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            <span class="Apple-tab-span">	</span></span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="project img ftco-animate d-flex justify-content-center align-items-center"</p>
-<p class="p1"><span class="Apple-converted-space">                     </span>style="background-image:url(images/zuppin-fleet.png); "&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="overlay"&gt;&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="text text-center p-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h3&gt;&lt;a href="https://apps.apple.com/tr/app/zuppin-fleet/id1400166596" target="_blank"&gt;Zuppin Fleet&lt;/a&gt;&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span&gt;iOS App Development&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;p&gt;Merena Bilişim A.Ş.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="col-md-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            <span class="Apple-tab-span">	</span></span>&lt;div class="ftco-animate" style="position: absolute; z-index: 2; margin: 8px;"&gt;<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">            <span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span>&lt;a href="https://itunes.apple.com/tr/app/zuppin/id1398288659" target="_blank"&gt; &lt;i class="btn btn-primary icon-apple"&gt;&lt;/i&gt;&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            <span class="Apple-tab-span">	</span></span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="project img ftco-animate d-flex justify-content-center align-items-center"</p>
-<p class="p1"><span class="Apple-converted-space">                     </span>style="background-image:url(images/zuppin.png); "&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="overlay"&gt;&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="text text-center p-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h3&gt;&lt;a href="https://itunes.apple.com/tr/app/zuppin/id1398288659" target="_blank"&gt;Zuppin&lt;/a&gt;&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span&gt;iOS App Development&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;p&gt;Merena Bilişim A.Ş.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="col-md-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            <span class="Apple-tab-span">	</span></span>&lt;div class="ftco-animate" style="position: absolute; z-index: 2; margin: 8px;"&gt;<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">            <span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span>&lt;a href="https://www.procend.com" target="_blank"&gt; &lt;i class="btn btn-primary icon-apple"&gt;&lt;/i&gt;&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            <span class="Apple-tab-span">	</span></span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="project img ftco-animate d-flex justify-content-center align-items-center"</p>
-<p class="p1"><span class="Apple-converted-space">                     </span>style="background-image:url(images/procend.png); "&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="overlay"&gt;&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="text text-center p-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h3&gt;&lt;a href="https://www.procend.com" target="_blank"&gt;Procend Smatch&lt;/a&gt;&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span&gt;iOS App Development&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;p&gt;Merena Bilişim A.Ş.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="col-md-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            <span class="Apple-tab-span">	</span></span>&lt;div class="ftco-animate" style="position: absolute; z-index: 2; margin: 8px;"&gt;<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">            <span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span>&lt;a href="https://apps.apple.com/us/app/aktuel-market-indirim-kampanya/id1480593938" target="_blank"&gt; &lt;i class="btn btn-primary icon-apple"&gt;&lt;/i&gt;&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            <span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span>&lt;a href="https://play.google.com/store/apps/details?id=com.atakancengizkurt.AktuelMarketindirimkampanya" target="_blank"&gt;&lt;i class="btn btn-primary icon-android"&gt;&lt;/i&gt;&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            <span class="Apple-tab-span">	</span></span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="project img ftco-animate d-flex justify-content-center align-items-center"</p>
-<p class="p1"><span class="Apple-converted-space">                     </span>style="background-image:url(images/aktuelMarket.png); "&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                    </span></p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="overlay"&gt;&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="text text-center p-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h3&gt;iOS: &lt;a href="https://apps.apple.com/us/app/aktuel-market-indirim-kampanya/id1480593938" target="_blank"&gt;Aktuel Market&lt;/a&gt;&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h3&gt;Android: &lt;a href="https://play.google.com/store/apps/details?id=com.atakancengizkurt.AktuelMarketindirimkampanya" target="_blank"&gt;Aktuel Market&lt;/a&gt;&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span&gt;iOS &amp; Android App Development&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;p&gt;My Own App&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">            </span></p>
-<p class="p2"><span class="Apple-converted-space">            </span></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="col-md-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            <span class="Apple-tab-span">	</span></span>&lt;div class="ftco-animate" style="position: absolute; z-index: 2; margin: 8px;"&gt;<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">            <span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span>&lt;a href="https://apps.apple.com/tr/app/%C5%9Fafak-sayar-askerlik/id1485770481" target="_blank"&gt; &lt;i class="btn btn-primary icon-apple"&gt;&lt;/i&gt;&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            <span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span>&lt;a href="https://play.google.com/store/apps/details?id=com.atakancengizkurt.SafakSayar" target="_blank"&gt;&lt;i class="btn btn-primary icon-android"&gt;&lt;/i&gt;&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            <span class="Apple-tab-span">	</span></span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="project img ftco-animate d-flex justify-content-center align-items-center"</p>
-<p class="p1"><span class="Apple-converted-space">                     </span>style="background-image:url(images/safakSayarAskerlik.png); "&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                    </span></p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="overlay"&gt;&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="text text-center p-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h3&gt;iOS: &lt;a href="https://apps.apple.com/tr/app/%C5%9Fafak-sayar-askerlik/id1485770481" target="_blank"&gt;Şafak Sayar Askerlik&lt;/a&gt;&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h3&gt;Android: &lt;a href="https://play.google.com/store/apps/details?id=com.atakancengizkurt.SafakSayar" target="_blank"&gt;Şafak Sayar Askerlik&lt;/a&gt;&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span&gt;iOS &amp; Android App Development&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;p&gt;My Own App&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">            </span></p>
-<p class="p2"><span class="Apple-converted-space">            </span></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="col-md-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            <span class="Apple-tab-span">	</span></span>&lt;div class="ftco-animate" style="position: absolute; z-index: 2; margin: 8px;"&gt;<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">            <span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span>&lt;a href="https://apps.apple.com/us/app/highways-times/id1513609703" target="_blank"&gt; &lt;i class="btn btn-primary icon-apple"&gt;&lt;/i&gt;&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            <span class="Apple-tab-span">	</span></span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="project img ftco-animate d-flex justify-content-center align-items-center"</p>
-<p class="p1"><span class="Apple-converted-space">                     </span>style="background-image:url(images/OtoyolSureleri.png); "&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                    </span></p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="overlay"&gt;&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="text text-center p-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h3&gt;&lt;a href="https://apps.apple.com/us/app/highways-times/id1513609703" target="_blank"&gt;Otoyol Süreleri&lt;/a&gt;&lt;/h3&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span&gt;iOS App Development&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;p&gt;My Own App&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">            </span></p>
-<p class="p2"><span class="Apple-converted-space">            </span></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="col-md-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            <span class="Apple-tab-span">	</span></span>&lt;div class="ftco-animate" style="position: absolute; z-index: 2; margin: 8px;"&gt;<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">            <span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span>&lt;a href="https://apps.apple.com/tr/app/canmoti/id1483501232" target="_blank"&gt; &lt;i class="btn btn-primary icon-apple"&gt;&lt;/i&gt;&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            <span class="Apple-tab-span">	</span></span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="project img ftco-animate d-flex justify-content-center align-items-center"</p>
-<p class="p1"><span class="Apple-converted-space">                     </span>style="background-image:url(images/canmoti.png); "&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                    </span></p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="overlay"&gt;&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="text text-center p-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h3&gt;&lt;a href="https://apps.apple.com/tr/app/canmoti/id1483501232" target="_blank"&gt;Canmoti&lt;/a&gt;&lt;/h3&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span&gt;iOS App Development&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;p&gt;Freelance&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">            </span></p>
-<p class="p2"><span class="Apple-converted-space">            </span></p>
-<p class="p2"><span class="Apple-converted-space">            </span></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="col-md-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            <span class="Apple-tab-span">	</span></span>&lt;div class="ftco-animate" style="position: absolute; z-index: 2; margin: 8px;"&gt;<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">            <span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span>&lt;a href="https://apps.apple.com/tr/app/canvote/id1500649866?l=tr" target="_blank"&gt; &lt;i class="btn btn-primary icon-apple"&gt;&lt;/i&gt;&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            <span class="Apple-tab-span">	</span></span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="project img ftco-animate d-flex justify-content-center align-items-center"</p>
-<p class="p1"><span class="Apple-converted-space">                     </span>style="background-image:url(images/CanVote.png); "&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="overlay"&gt;&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="text text-center p-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h3&gt;&lt;a href="https://apps.apple.com/tr/app/canvote/id1500649866?l=tr" target="_blank"&gt;CanVote&lt;/a&gt;&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span&gt;iOS App Development&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;p&gt;Freelance&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">            </span></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="col-md-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            <span class="Apple-tab-span">	</span></span>&lt;div class="ftco-animate" style="position: absolute; z-index: 2; margin: 8px;"&gt;<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">            <span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span>&lt;a href="https://apps.apple.com/tr/app/banka-kurlar%C4%B1/id1485019449" target="_blank"&gt; &lt;i class="btn btn-primary icon-apple"&gt;&lt;/i&gt;&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            <span class="Apple-tab-span">	</span></span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="project img ftco-animate d-flex justify-content-center align-items-center"</p>
-<p class="p1"><span class="Apple-converted-space">                     </span>style="background-image:url(images/BankaKurlari.png); "&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="overlay"&gt;&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="text text-center p-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h3&gt;&lt;a href="https://apps.apple.com/tr/app/banka-kurlar%C4%B1/id1485019449" target="_blank"&gt;Banka Kurları&lt;/a&gt;&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span&gt;iOS App Development&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;p&gt;My Own App&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">            </span></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="col-md-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            <span class="Apple-tab-span">	</span></span>&lt;div class="ftco-animate" style="position: absolute; z-index: 2; margin: 8px;"&gt;<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">            <span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span>&lt;a href="https://apps.apple.com/bh/app/turse-kontrol/id1529850891" target="_blank"&gt; &lt;i class="btn btn-primary icon-apple"&gt;&lt;/i&gt;&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            <span class="Apple-tab-span">	</span></span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="project img ftco-animate d-flex justify-content-center align-items-center"</p>
-<p class="p1"><span class="Apple-converted-space">                     </span>style="background-image:url(images/Turse-Kontrol.png); "&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="overlay"&gt;&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="text text-center p-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h3&gt;&lt;a href="https://apps.apple.com/bh/app/turse-kontrol/id1529850891" target="_blank"&gt;Turse Kontrol&lt;/a&gt;&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span&gt;iOS App Development&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;p&gt;Freelance&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">            </span></p>
-<p class="p1"><span class="Apple-converted-space">             </span>&lt;div class="col-md-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            <span class="Apple-tab-span">	</span></span>&lt;div class="ftco-animate" style="position: absolute; z-index: 2; margin: 8px;"&gt;<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">            <span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span>&lt;a href="https://apps.apple.com/bh/app/turse/id1532747618" target="_blank"&gt; &lt;i class="btn btn-primary icon-apple"&gt;&lt;/i&gt;&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            <span class="Apple-tab-span">	</span></span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="project img ftco-animate d-flex justify-content-center align-items-center"</p>
-<p class="p1"><span class="Apple-converted-space">                     </span>style="background-image:url(images/Turse.png); "&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="overlay"&gt;&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="text text-center p-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h3&gt;&lt;a href="https://apps.apple.com/bh/app/turse/id1532747618" target="_blank"&gt;Turse Kaptan&lt;/a&gt;&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span&gt;iOS App Development&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;p&gt;Freelance&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">            </span></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="col-md-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            <span class="Apple-tab-span">	</span></span>&lt;div class="ftco-animate" style="position: absolute; z-index: 2; margin: 8px;"&gt;<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">            <span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span>&lt;a href="https://apps.apple.com/us/app/sena-denetim/id1498753405" target="_blank"&gt; &lt;i class="btn btn-primary icon-apple"&gt;&lt;/i&gt;&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            <span class="Apple-tab-span">	</span></span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="project img ftco-animate d-flex justify-content-center align-items-center"</p>
-<p class="p1"><span class="Apple-converted-space">                     </span>style="background-image:url(images/SenaTur.png); "&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="overlay"&gt;&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="text text-center p-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h3&gt;&lt;a href="https://apps.apple.com/us/app/sena-denetim/id1498753405" target="_blank"&gt;Sena Denetim&lt;/a&gt;&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span&gt;iOS App Development&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;p&gt;Freelance&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="col-md-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            <span class="Apple-tab-span">	</span></span>&lt;div class="ftco-animate" style="position: absolute; z-index: 2; margin: 8px;"&gt;<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">            <span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span>&lt;a href="https://apps.apple.com/us/app/sena-rehber/id1502386035" target="_blank"&gt; &lt;i class="btn btn-primary icon-apple"&gt;&lt;/i&gt;&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            <span class="Apple-tab-span">	</span></span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="project img ftco-animate d-flex justify-content-center align-items-center"</p>
-<p class="p1"><span class="Apple-converted-space">                     </span>style="background-image:url(images/SenaTur.png); "&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="overlay"&gt;&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="text text-center p-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h3&gt;&lt;a href="https://apps.apple.com/us/app/sena-rehber/id1502386035" target="_blank"&gt;Sena Rehber&lt;/a&gt;&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span&gt;iOS App Development&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;p&gt;Freelance&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">            </span></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="col-md-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            <span class="Apple-tab-span">	</span></span>&lt;div class="ftco-animate" style="position: absolute; z-index: 2; margin: 8px;"&gt;<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">            <span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span>&lt;a href="https://apps.apple.com/md/app/sena-tur/id1528766100" target="_blank"&gt; &lt;i class="btn btn-primary icon-apple"&gt;&lt;/i&gt;&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            <span class="Apple-tab-span">	</span></span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="project img ftco-animate d-flex justify-content-center align-items-center"</p>
-<p class="p1"><span class="Apple-converted-space">                     </span>style="background-image:url(images/SenaTur.png); "&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="overlay"&gt;&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="text text-center p-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h3&gt;&lt;a href="https://apps.apple.com/md/app/sena-tur/id1528766100" target="_blank"&gt;Sena Tur&lt;/a&gt;&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span&gt;iOS App Development&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;p&gt;Freelance&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">            </span></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="col-md-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            <span class="Apple-tab-span">	</span></span>&lt;div class="ftco-animate" style="position: absolute; z-index: 2; margin: 8px;"&gt;<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">            <span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span>&lt;a href="https://apps.apple.com/md/app/sena-yolcu/id1542933665" target="_blank"&gt; &lt;i class="btn btn-primary icon-apple"&gt;&lt;/i&gt;&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            <span class="Apple-tab-span">	</span></span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="project img ftco-animate d-flex justify-content-center align-items-center"</p>
-<p class="p1"><span class="Apple-converted-space">                     </span>style="background-image:url(images/SenaTur.png); "&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="overlay"&gt;&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="text text-center p-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h3&gt;&lt;a href="https://apps.apple.com/md/app/sena-yolcu/id1542933665" target="_blank"&gt;Sena Yolcu&lt;/a&gt;&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span&gt;iOS App Development&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;p&gt;Freelance&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">            </span></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="col-md-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            <span class="Apple-tab-span">	</span></span>&lt;div class="ftco-animate" style="position: absolute; z-index: 2; margin: 8px;"&gt;<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">            <span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span>&lt;a href="https://apps.apple.com/us/app/golf-digest-schools/id1503417783" target="_blank"&gt; &lt;i class="btn btn-primary icon-apple"&gt;&lt;/i&gt;&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            <span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span>&lt;a href="https://play.google.com/store/apps/details?id=com.discovery.GolfDigest&amp;hl=en_AU" target="_blank"&gt;&lt;i class="btn btn-primary icon-android"&gt;&lt;/i&gt;&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            <span class="Apple-tab-span">	</span></span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="project img ftco-animate d-flex justify-content-center align-items-center"</p>
-<p class="p1"><span class="Apple-converted-space">                     </span>style="background-image:url(images/GolfDigestSchools.png); "&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                    </span></p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="overlay"&gt;&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="text text-center p-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h3&gt;iOS: &lt;a href="https://apps.apple.com/us/app/golf-digest-schools/id1503417783" target="_blank"&gt;Golf Digest Schools&lt;/a&gt;&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h3&gt;Android: &lt;a href="https://play.google.com/store/apps/details?id=com.discovery.GolfDigest&amp;hl=en_AU" target="_blank"&gt;Golf Digest Schools&lt;/a&gt;&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span&gt;iOS &amp; Android App Development&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;p&gt;Rapsodo Pte. Ltd.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">            </span></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="col-md-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            <span class="Apple-tab-span">	</span></span>&lt;div class="ftco-animate" style="position: absolute; z-index: 2; margin: 8px;"&gt;<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">            <span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span>&lt;a href="https://apps.apple.com/tr/app/vodafone-yan%C4%B1mda/id489845659?l=tr" target="_blank"&gt; &lt;i class="btn btn-primary icon-apple"&gt;&lt;/i&gt;&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            <span class="Apple-tab-span">	</span></span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="project img ftco-animate d-flex justify-content-center align-items-center"</p>
-<p class="p1"><span class="Apple-converted-space">                     </span>style="background-image:url(images/vodafone_yanimda.png); "&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="overlay"&gt;&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="text text-center p-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h3&gt;&lt;a href="https://apps.apple.com/tr/app/vodafone-yan%C4%B1mda/id489845659?l=tr" target="_blank"&gt;Vodafone Yanımda&lt;/a&gt;&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span&gt;iOS App Development&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;p&gt;Loodos Tech&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">            </span></p>
-<p class="p2"><span class="Apple-converted-space">            </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">    </span></p>
-<p class="p1">&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p2"><br></p>
-<p class="p2"><br></p>
-<p class="p1">&lt;section class="ftco-section" id="blog-section"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="container"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="row justify-content-center mb-5 pb-5"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="col-md-7 heading-section text-center ftco-animate"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;h1 class="big big-2"&gt;Blog&lt;/h1&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;h2 class="mb-4"&gt;My Blog&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;&lt;a href="https://atakancengizkurt.com" target="_blank"&gt; About iOS, Xcode, Swift<span class="Apple-converted-space">  </span>&lt;/a&gt;&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;p &gt;&lt;a href="https://atakancengizkurt.com" target="_blank" class="btn btn-primary py-3 px-5"&gt;Go To Blog&lt;/a&gt;&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;p &gt;&lt;a href="https://medium.com/@atakancengizkurt" target="_blank" class="btn btn-primary py-3 px-3"&gt;Medium&lt;/a&gt;&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p1">&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;section class="ftco-section ftco-hireme img" style="background-image: url(images/bg_1.jpg)"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="overlay"&gt;&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="container"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="row justify-content-center"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="col-md-7 ftco-animate text-center"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;h2&gt;I'm &lt;span&gt;Available&lt;/span&gt; for new projects&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;p class="mb-0"&gt;&lt;a href="mailto:atakancengizkurt@gmail.com" class="btn btn-primary py-3 px-5"&gt;Send Details&lt;/a&gt;&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p1">&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;section class="ftco-section contact-section ftco-no-pb" id="contact-section"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="container"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="row justify-content-center mb-5 pb-3"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="col-md-7 heading-section text-center ftco-animate"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;h1 class="big big-2"&gt;Contact&lt;/h1&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;h2 class="mb-4"&gt;Contact Me&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="row d-flex contact-info mb-5"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="col-md-6 col-lg-3 d-flex ftco-animate"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="align-self-stretch box text-center p-4 shadow"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="icon d-flex align-items-center justify-content-center"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="icon-map-signs"&gt;&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h3 class="mb-4"&gt;Address&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p&gt;İzmir, TURKEY&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="col-md-6 col-lg-3 d-flex ftco-animate"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="align-self-stretch box text-center p-4 shadow"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="icon d-flex align-items-center justify-content-center"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="icon-phone2"&gt;&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h3 class="mb-4"&gt;Contact Number&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p&gt;&lt;a href="tel://+905066564825"&gt;+90-506-656-48-25&lt;/a&gt;&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="col-md-6 col-lg-3 d-flex ftco-animate"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="align-self-stretch box text-center p-4 shadow"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="icon d-flex align-items-center justify-content-center"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="icon-paper-plane"&gt;&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h3 class="mb-4"&gt;Email Address&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p&gt;&lt;a href="mailto:atakancengizkurt@gmail.com"&gt;Send E-mail&lt;/a&gt;&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="col-md-6 col-lg-3 d-flex ftco-animate"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="align-self-stretch box text-center p-4 shadow"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="icon d-flex align-items-center justify-content-center"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="icon-globe"&gt;&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h3 class="mb-4"&gt;Website&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p&gt;&lt;a href="https://www.atakancengizkurt.com.tr" target="_blank"&gt;atakancengizkurt.com.tr&lt;/a&gt;&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p1">&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p2"><br></p>
-<p class="p1">&lt;footer class="ftco-footer ftco-section"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="container"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="row mb-5"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="col-md"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="ftco-footer-widget mb-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h2 class="ftco-heading-2"&gt;About&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p&gt;Atakan Cengiz KURT &lt;/p&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;p&gt;iOS Developer&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;p&gt;Mobile Developer&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;li class="ftco-animate"&gt;&lt;a href="https://www.linkedin.com/in/atakancengizkurt/" target="_blank"&gt;&lt;span</p>
-<p class="p1"><span class="Apple-converted-space">                                </span>class="icon-linkedin"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;li class="ftco-animate"&gt;&lt;a href="https://apps.apple.com/us/developer/atakan-cengiz-kurt/id1480593937" target="_blank"&gt;&lt;span</p>
-<p class="p1"><span class="Apple-converted-space">                                </span>class="icon-apple"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;li class="ftco-animate"&gt;&lt;a href="https://play.google.com/store/apps/developer?id=Atakan+Cengiz+KURT" target="_blank"&gt;&lt;span</p>
-<p class="p1"><span class="Apple-converted-space">                                </span>class="icon-android"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="col-md"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="ftco-footer-widget mb-4 ml-md-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h2 class="ftco-heading-2"&gt;Links&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;ul class="list-unstyled"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;li&gt;&lt;a href="#"&gt;&lt;span class="icon-long-arrow-right mr-2"&gt;&lt;/span&gt;Home&lt;/a&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;li&gt;&lt;a href="#about-section"&gt;&lt;span class="icon-long-arrow-right mr-2"&gt;&lt;/span&gt;About&lt;/a&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;li&gt;&lt;a href="#services-section"&gt;&lt;span class="icon-long-arrow-right mr-2"&gt;&lt;/span&gt;Services&lt;/a&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;li&gt;&lt;a href="#projects-section"&gt;&lt;span class="icon-long-arrow-right mr-2"&gt;&lt;/span&gt;Portfolio&lt;/a&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;li&gt;&lt;a href="#contact-section"&gt;&lt;span class="icon-long-arrow-right mr-2"&gt;&lt;/span&gt;Contact&lt;/a&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="col-md"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="ftco-footer-widget mb-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h2 class="ftco-heading-2"&gt;Services&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;ul class="list-unstyled"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;li&gt;&lt;a href="#services-section"&gt;&lt;span class="icon-long-arrow-right mr-2"&gt;&lt;/span&gt;App Development&lt;/a&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;li&gt;&lt;a href="#services-section"&gt;&lt;span class="icon-long-arrow-right mr-2"&gt;&lt;/span&gt;App Design&lt;/a&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;li&gt;&lt;a href="#services-section"&gt;&lt;span class="icon-long-arrow-right mr-2"&gt;&lt;/span&gt;ASO&lt;/a&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="col-md"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="ftco-footer-widget mb-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h2 class="ftco-heading-2"&gt;Have a Questions?&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="block-23 mb-3"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;ul&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;&lt;a href="mailto: atakancengizkurt@gmail.com"&gt;&lt;span class="icon icon-envelope"&gt;&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                </span>&amp;nbsp; &lt;span class="text"&gt;atakancengizkurt@gmail.com&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                                </span></p>
-<p class="p1"><span class="Apple-converted-space">                                </span>&lt;li&gt;&lt;a href="https://www.karacanta.av.tr"&gt;&lt;span class="icon icon-gavel"&gt;&lt;/span&gt;izmir avukat&lt;/a&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="row"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="col-md-12 text-center"&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>Copyright &amp;copy;&lt;script&gt;document.write(new Date().getFullYear());&lt;/script&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>All rights reserved | Atakan Cengiz KURT</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p1">&lt;/footer&gt;</p>
-<p class="p2"><br></p>
-<p class="p2"><br></p>
-<p class="p1">&lt;!-- loader --&gt;</p>
-<p class="p1">&lt;div id="ftco-loader" class="show fullscreen"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;svg class="circular" width="48px" height="48px"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"</p>
-<p class="p1"><span class="Apple-converted-space">                </span>stroke="#F96D00"/&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/svg&gt;</p>
-<p class="p1">&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p2"><br></p>
-<p class="p1">&lt;script src="js/jquery.min.js"&gt;&lt;/script&gt;</p>
-<p class="p1">&lt;script src="js/jquery-migrate-3.0.1.min.js"&gt;&lt;/script&gt;</p>
-<p class="p1">&lt;script src="js/popper.min.js"&gt;&lt;/script&gt;</p>
-<p class="p1">&lt;script src="js/bootstrap.min.js"&gt;&lt;/script&gt;</p>
-<p class="p1">&lt;script src="js/jquery.easing.1.3.js"&gt;&lt;/script&gt;</p>
-<p class="p1">&lt;script src="js/jquery.waypoints.min.js"&gt;&lt;/script&gt;</p>
-<p class="p1">&lt;script src="js/jquery.stellar.min.js"&gt;&lt;/script&gt;</p>
-<p class="p1">&lt;script src="js/owl.carousel.min.js"&gt;&lt;/script&gt;</p>
-<p class="p1">&lt;script src="js/jquery.magnific-popup.min.js"&gt;&lt;/script&gt;</p>
-<p class="p1">&lt;script src="js/aos.js"&gt;&lt;/script&gt;</p>
-<p class="p1">&lt;script src="js/jquery.animateNumber.min.js"&gt;&lt;/script&gt;</p>
-<p class="p1">&lt;script src="js/scrollax.min.js"&gt;&lt;/script&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;script src="js/main.js"&gt;&lt;/script&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;/body&gt;</p>
-<p class="p1">&lt;/html&gt;</p>
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+
+    <div class="container">
+
+        <a class="navbar-brand" href="index.html"><span>A</span>takan Cengiz KURT</a>
+
+        <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
+
+                data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+
+            <span class="oi oi-menu"></span> Menu
+
+        </button>
+
+
+
+        <div class="collapse navbar-collapse" id="ftco-nav">
+
+            <ul class="navbar-nav nav ml-auto">
+
+                <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+
+                <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+
+                <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Experiences</span></a></li>
+
+                <li class="nav-item"><a href="#services-section" class="nav-link"><span>Services</span></a></li>
+
+                <li class="nav-item"><a href="#projects-section" class="nav-link"><span>Portfolio</span></a></li>
+
+                <li class="nav-item"><a href="#blog-section" class="nav-link"><span>My Blog</span></a></li>
+
+                <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+
+                <li class="nav-item"><a href="https://apps.apple.com/us/developer/atakan-cengiz-kurt/id1480593937" target="_blank" class="nav-link"><span>My Apps</span></a></li>
+
+                
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+<section class="hero-wrap js-fullheight">
+
+    <div class="overlay"></div>
+
+    <div class="container">
+
+        <div class="row no-gutters slider-text js-fullheight justify-content-center align-items-center">
+
+            <div class="col-lg-8 col-md-6 ftco-animate d-flex align-items-center">
+
+                <div class="text text-center">
+
+                    <span class="subheading">Hey! I am</span>
+
+                    <h1>Atakan Cengiz KURT</h1>
+
+                    <h2>I'm an
+
+                        <span
+
+                                class="txt-rotate"
+
+                                data-period="2000"
+
+                                data-rotate='[ "iOS Developer.", "Apple Developer." ]'></span>
+
+                    </h2>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    </div>
+
+    <!--
+
+    <div class="mouse">
+
+        <a href="#" class="mouse-icon">
+
+            <div class="mouse-wheel"><span class="ion-ios-arrow-round-down"></span></div>
+
+        </a>
+
+    </div>-->
+
+</section>
+
+
+
+<section class="ftco-about img ftco-section ftco-no-pt ftco-no-pb" id="about-section">
+
+    <div class="container">
+
+        <div class="row d-flex no-gutters">
+
+            <div class="col-md-6 col-lg-6 d-flex">
+
+                <div class="img-about img d-flex align-items-stretch">
+
+                    <div class="overlay"></div>
+
+                    <div class="img d-flex align-self-stretch align-items-center"
+
+                         style="background-image:url(images/Atakan-Cengiz-KURT.JPG);">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-6 col-lg-6 pl-md-5 py-5">
+
+                <div class="row justify-content-start pb-3">
+
+                    <div class="col-md-12 heading-section ftco-animate">
+
+                        <h1 class="big">About</h1>
+
+                        <h2 class="mb-4">About Me</h2>
+
+                        <p>I'm a iOS Developer of experience with iOS (Swift) development. Proficiency with
+
+                            applications for iOS devices. I have a strong understanding of the patterns and practices
+
+                            that revolve around the iOS platform. I make it my goal to create a user interface
+
+                            experience. Excellent interpersonal and communication abilities, and possess a wide range of
+
+                            technical skills. </p>
+
+                        <ul class="about-info mt-4 px-md-0 px-2">
+
+                            <li class="d-flex"><span>Name:</span> <span>Atakan Cengiz KURT</span></li>
+
+                            <li class="d-flex"><span>Address:</span> <span>İzmir, TURKEY</span></li>
+
+                          <li class="d-flex"><span>Email:</span> <span> <a href="mailto: atakancengizkurt@gmail.com"> Send E-mail</a></span></li>
+
+                            <li class="d-flex"><span>Phone: </span> <span><a href="tel://+905066564825"> +90-506-656-48-25</a></span></li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+                <div class="counter-wrap ftco-animate d-flex mt-md-3">
+
+                    <div class="text">
+
+
+
+                        <p class="mb-4">
+
+                          <span class="number" data-number="21">0</span>
+
+                          <span>Project completed</span>
+
+                      </p>
+
+                        <p><a href="https://drive.google.com/file/d/1UwDzA1VLBQ-hA6oMuVzzSBcj8qzXvQSz/view?usp=sharing" target="_blank" class="btn btn-primary py-3 px-3">Download CV</a> - 
+
+                        <a href="https://medium.com/@atakancengizkurt" target="_blank" class="btn btn-primary py-3 px-3">Medium</a></p>
+
+                        <p> <a href="https://www.linkedin.com/in/atakancengizkurt/" target="_blank" class="btn btn-primary py-3 px-3"><i
+
+								class="icon-linkedin"></i> LinkedIn</a>  -  
+
+								<a href="https://github.com/atakancengizkurt" target="_blank" class="btn btn-primary py-3 px-3"><i class="icon-github"></i> GitHub</a></p> 
+
+								<p>My Projects:  <p> 
+
+								<a href="https://apps.apple.com/tr/developer/atakan-cengiz-kurt/id1480593937" target="_blank" class="btn btn-primary py-3 px-3"><i class="icon-apple"></i> AppStore</a> - 
+
+								<a href="https://play.google.com/store/apps/developer?id=Atakan+Cengiz+KURT" target="_blank" class="btn btn-primary py-3 px-3"><i
+
+                                class="icon-android"></i> PlayStore</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+<section class="ftco-section ftco-no-pb goto-here" id="resume-section">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-3">
+
+                <nav id="navi">
+
+                    <ul>
+
+                        <li><a href="#page-2">Experiences</a></li>
+
+                        <li><a href="#page-3">Skills</a></li>
+
+                    </ul>
+
+                </nav>
+
+            </div>
+
+            <div class="col-md-9">
+
+
+
+
+
+                <div id="page-2" class="page two">
+
+                    <h2 class="heading">Experiences</h2>
+
+                    
+
+                    <div class="resume-wrap d-flex ftco-animate">
+
+                        <div class="icon d-flex align-items-center justify-content-center">
+
+                            <span class="flaticon-ideas"></span>
+
+                        </div>
+
+                        <div class="text pl-3">
+
+                            <span class="date">2021-Present</span>
+
+                            <h2>iOS Developer</h2>
+
+                            <span class="position">Loodos Tech</span>
+
+                            <p>Development Vodafone Yanımda with Native iOS (Swift)</p>
+
+                        </div>
+
+                    </div>
+
+                    
+
+                    <div class="resume-wrap d-flex ftco-animate">
+
+                        <div class="icon d-flex align-items-center justify-content-center">
+
+                            <span class="flaticon-ideas"></span>
+
+                        </div>
+
+                        <div class="text pl-3">
+
+                            <span class="date">2020-2021</span>
+
+                            <h2>Mobile Developer</h2>
+
+                            <span class="position">Rapsodo Pte. Ltd.</span>
+
+                            <p>Developed Golf Digest Schools App with Native Android (Kotlin) and Native iOS (Swift) to Discovery Channel</p>
+
+                        </div>
+
+                    </div>
+
+
+
+					<div class="resume-wrap d-flex ftco-animate">
+
+                        <div class="icon d-flex align-items-center justify-content-center">
+
+                            <span class="flaticon-ideas"></span>
+
+                        </div>
+
+                        <div class="text pl-3">
+
+                            <span class="date">2018-2020</span>
+
+                            <h2>iOS Developer</h2>
+
+                            <span class="position">Merena Bilişim A.Ş.</span>
+
+                            <p>Developed Zuppin application that in transportation industry, Procend application that in game lobby. I had been used Websocket platform, Restfull Api, Map & Location.</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="resume-wrap d-flex ftco-animate">
+
+                        <div class="icon d-flex align-items-center justify-content-center">
+
+                            <span class="flaticon-ideas"></span>
+
+                        </div>
+
+                        <div class="text pl-3">
+
+                            <span class="date">2016-2018</span>
+
+                            <h2>iOS Developer</h2>
+
+                            <span class="position">Freelance App Developer</span>
+
+                            <p>Canmoti</p>
+
+                            <p>Aktuel Market indirim kampanya</p>
+
+                            <p>Banka Kurları</p>
+
+                            <p>Şafak Sayar Askerlik</p>
+
+                            <p>CanVote</p>
+
+                            <p>Sena Denetim</p>
+
+                            <p>Sena Rehber</p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="resume-wrap d-flex ftco-animate">
+
+                        <div class="icon d-flex align-items-center justify-content-center">
+
+                            <span class="flaticon-ideas"></span>
+
+                        </div>
+
+                        <div class="text pl-3">
+
+                            <span class="date">2016-2018</span>
+
+                            <h2>Project Manager</h2>
+
+                            <span class="position">Levent Lostra</span>
+
+                            <p>Creating and managing ERP system</p>
+
+                        </div>
+
+                    </div>
+
+
+
+
+
+                </div>
+
+                <div id="page-3" class="page three">
+
+                    <h2 class="heading">Skills</h2>
+
+                    <div class="row progress-circle mb-5">
+
+                        <div class="col-lg-4 mb-4">
+
+                            <div class="bg-white rounded-lg shadow p-4">
+
+                                <h2 class="h5 font-weight-bold text-center mb-4">Swift</h2>
+
+
+
+                                <div class="progress mx-auto" data-value='90'>
+
+						          <span class="progress-left">
+
+                        <span class="progress-bar border-primary"></span>
+
+						          </span>
+
+                                    <span class="progress-right">
+
+                        <span class="progress-bar border-primary"></span>
+
+						          </span>
+
+                                    <div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+
+                                        <div class="h2 font-weight-bold">90<sup class="small">%</sup></div>
+
+                                    </div>
+
+                                </div>
+
+
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="col-lg-4 mb-4">
+
+                            <div class="bg-white rounded-lg shadow p-4">
+
+                                <h2 class="h5 font-weight-bold text-center mb-4">Kotlin</h2>
+
+
+
+                                <div class="progress mx-auto" data-value='80'>
+
+						          <span class="progress-left">
+
+                        <span class="progress-bar border-primary"></span>
+
+						          </span>
+
+                                    <span class="progress-right">
+
+                        <span class="progress-bar border-primary"></span>
+
+						          </span>
+
+                                    <div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+
+                                        <div class="h2 font-weight-bold">80<sup class="small">%</sup></div>
+
+                                    </div>
+
+                                </div>
+
+
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="col-lg-4 mb-4">
+
+                            <div class="bg-white rounded-lg shadow p-4">
+
+                                <h2 class="h5 font-weight-bold text-center mb-4">Sketch</h2>
+
+
+
+                                <div class="progress mx-auto" data-value='95'>
+
+						          <span class="progress-left">
+
+                        <span class="progress-bar border-primary"></span>
+
+						          </span>
+
+                                    <span class="progress-right">
+
+                        <span class="progress-bar border-primary"></span>
+
+						          </span>
+
+                                    <div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+
+                                        <div class="h2 font-weight-bold">95<sup class="small">%</sup></div>
+
+                                    </div>
+
+                                </div>
+
+
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-md-6 animate-box">
+
+                            <div class="progress-wrap ftco-animate">
+
+                                <h3>UIKit & Animation</h3>
+
+                                <div class="progress">
+
+                                    <div class="progress-bar color-1" role="progressbar" aria-valuenow="90"
+
+                                         aria-valuemin="0" aria-valuemax="100" style="width:90%">
+
+                                        <span>90%</span>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-6 animate-box">
+
+                            <div class="progress-wrap ftco-animate">
+
+                                <h3>MVVM & MVC</h3>
+
+                                <div class="progress">
+
+                                    <div class="progress-bar color-2" role="progressbar" aria-valuenow="85"
+
+                                         aria-valuemin="0" aria-valuemax="100" style="width:85%">
+
+                                        <span>85%</span>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-6 animate-box">
+
+                            <div class="progress-wrap ftco-animate">
+
+                                <h3>Adobe Xd</h3>
+
+                                <div class="progress">
+
+                                    <div class="progress-bar color-3" role="progressbar" aria-valuenow="95"
+
+                                         aria-valuemin="0" aria-valuemax="100" style="width:95%">
+
+                                        <span>95%</span>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-6 animate-box">
+
+                            <div class="progress-wrap ftco-animate">
+
+                                <h3>Core Data & Sql Lite</h3>
+
+                                <div class="progress">
+
+                                    <div class="progress-bar color-4" role="progressbar" aria-valuenow="90"
+
+                                         aria-valuemin="0" aria-valuemax="100" style="width:90%">
+
+                                        <span>90%</span>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+
+
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<section class="ftco-section" id="services-section">
+
+    <div class="container-fluid px-md-5">
+
+        <div class="row justify-content-center py-5 mt-5">
+
+            <div class="col-md-12 heading-section text-center ftco-animate">
+
+                <h1 class="big big-2">Services</h1>
+
+                <h2 class="mb-4">Services</h2>
+
+               <!--<p>In addition to mobile development, I work with my freelance team for software solutions in other technologies.</p>-->
+
+            </div>
+
+        </div>
+
+        <div class="row">
+
+
+
+			<div class="col-md-4 text-center d-flex ftco-animate" class="services-1 shadow" style="cursor: pointer">
+
+				<a  class="services-1 shadow" style="cursor: pointer">
+
+							<span class="icon">
+
+								<i class="flaticon-innovation"></i>
+
+							</span>
+
+					<div class="desc">
+
+						<h3 class="mb-5">App Development</h3>
+
+						<p>Mobile Application Development</p>
+
+					</div>
+
+				</a>
+
+			</div>
+
+
+
+            <div class="col-md-4 text-center d-flex ftco-animate">
+
+                <a class="services-1 shadow" style="cursor: pointer">
+
+							<span class="icon">
+
+								<i class="flaticon-ux-design"></i>
+
+							</span>
+
+                    <div class="desc">
+
+                        <h3 class="mb-5">App Design</h3>
+
+                        <p>Design work for mobile application</p>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+
+
+            <div class="col-md-4 text-center d-flex ftco-animate">
+
+                <a  class="services-1 shadow" style="cursor: pointer">
+
+							<span class="icon">
+
+								<i class="flaticon-analysis"></i>
+
+							</span>
+
+                    <div class="desc">
+
+                        <h3 class="mb-5">ASO</h3>
+
+                        <p>App Store Optimization</p>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+
+
+
+
+
+
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+<section class="ftco-section ftco-project" id="projects-section">
+
+    <div class="container-fluid px-md-0">
+
+        <div class="row no-gutters justify-content-center pb-5">
+
+            <div class="col-md-12 heading-section text-center ftco-animate">
+
+                <h1 class="big big-2">Portfolio</h1>
+
+                <h2 class="mb-4">Portfolio</h2>
+
+                <p></p>
+
+            </div>
+
+        </div>
+
+        <div class="row no-gutters">
+
+
+
+        	<!-- https://apps.apple.com/tr/app/zuppin-fleet/id1400166596-->
+
+        	<div class="col-md-4">
+
+            	<div class="ftco-animate" style="position: absolute; z-index: 2; margin: 8px;"> 
+
+            		<a href="https://apps.apple.com/tr/app/zuppin-fleet/id1400166596" target="_blank"> <i class="btn btn-primary icon-apple"></i></a>
+
+            	</div>
+
+                <div class="project img ftco-animate d-flex justify-content-center align-items-center"
+
+                     style="background-image:url(images/zuppin-fleet.png); ">
+
+                    <div class="overlay"></div>
+
+                    <div class="text text-center p-4">
+
+                        <h3><a href="https://apps.apple.com/tr/app/zuppin-fleet/id1400166596" target="_blank">Zuppin Fleet</a></h3>
+
+                        <span>iOS App Development</span>
+
+						<p>Merena Bilişim A.Ş.</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="col-md-4">
+
+            	<div class="ftco-animate" style="position: absolute; z-index: 2; margin: 8px;"> 
+
+            		<a href="https://itunes.apple.com/tr/app/zuppin/id1398288659" target="_blank"> <i class="btn btn-primary icon-apple"></i></a>
+
+            	</div>
+
+                <div class="project img ftco-animate d-flex justify-content-center align-items-center"
+
+                     style="background-image:url(images/zuppin.png); ">
+
+                    <div class="overlay"></div>
+
+                    <div class="text text-center p-4">
+
+                        <h3><a href="https://itunes.apple.com/tr/app/zuppin/id1398288659" target="_blank">Zuppin</a></h3>
+
+                        <span>iOS App Development</span>
+
+						<p>Merena Bilişim A.Ş.</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+
+            	<div class="ftco-animate" style="position: absolute; z-index: 2; margin: 8px;"> 
+
+            		<a href="https://www.procend.com" target="_blank"> <i class="btn btn-primary icon-apple"></i></a>
+
+            	</div>
+
+                <div class="project img ftco-animate d-flex justify-content-center align-items-center"
+
+                     style="background-image:url(images/procend.png); ">
+
+                    <div class="overlay"></div>
+
+                    <div class="text text-center p-4">
+
+                        <h3><a href="https://www.procend.com" target="_blank">Procend Smatch</a></h3>
+
+                        <span>iOS App Development</span>
+
+						<p>Merena Bilişim A.Ş.</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="col-md-4">
+
+            	<div class="ftco-animate" style="position: absolute; z-index: 2; margin: 8px;"> 
+
+            		<a href="https://apps.apple.com/us/app/aktuel-market-indirim-kampanya/id1480593938" target="_blank"> <i class="btn btn-primary icon-apple"></i></a>
+
+            		<a href="https://play.google.com/store/apps/details?id=com.atakancengizkurt.AktuelMarketindirimkampanya" target="_blank"><i class="btn btn-primary icon-android"></i></a>
+
+            	</div>
+
+                <div class="project img ftco-animate d-flex justify-content-center align-items-center"
+
+                     style="background-image:url(images/aktuelMarket.png); ">
+
+                    
+
+                    <div class="overlay"></div>
+
+                    <div class="text text-center p-4">
+
+                        <h3>iOS: <a href="https://apps.apple.com/us/app/aktuel-market-indirim-kampanya/id1480593938" target="_blank">Aktuel Market</a></h3>
+
+                        <h3>Android: <a href="https://play.google.com/store/apps/details?id=com.atakancengizkurt.AktuelMarketindirimkampanya" target="_blank">Aktuel Market</a></h3>
+
+                        <span>iOS & Android App Development</span>
+
+						<p>My Own App</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            
+
+            
+
+            <div class="col-md-4">
+
+            	<div class="ftco-animate" style="position: absolute; z-index: 2; margin: 8px;"> 
+
+            		<a href="https://apps.apple.com/tr/app/%C5%9Fafak-sayar-askerlik/id1485770481" target="_blank"> <i class="btn btn-primary icon-apple"></i></a>
+
+            		<a href="https://play.google.com/store/apps/details?id=com.atakancengizkurt.SafakSayar" target="_blank"><i class="btn btn-primary icon-android"></i></a>
+
+            	</div>
+
+                <div class="project img ftco-animate d-flex justify-content-center align-items-center"
+
+                     style="background-image:url(images/safakSayarAskerlik.png); ">
+
+                    
+
+                    <div class="overlay"></div>
+
+                    <div class="text text-center p-4">
+
+                        <h3>iOS: <a href="https://apps.apple.com/tr/app/%C5%9Fafak-sayar-askerlik/id1485770481" target="_blank">Şafak Sayar Askerlik</a></h3>
+
+                        <h3>Android: <a href="https://play.google.com/store/apps/details?id=com.atakancengizkurt.SafakSayar" target="_blank">Şafak Sayar Askerlik</a></h3>
+
+                        <span>iOS & Android App Development</span>
+
+						<p>My Own App</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            
+
+            
+
+            <div class="col-md-4">
+
+            	<div class="ftco-animate" style="position: absolute; z-index: 2; margin: 8px;"> 
+
+            		<a href="https://apps.apple.com/us/app/highways-times/id1513609703" target="_blank"> <i class="btn btn-primary icon-apple"></i></a>
+
+            	</div>
+
+                <div class="project img ftco-animate d-flex justify-content-center align-items-center"
+
+                     style="background-image:url(images/OtoyolSureleri.png); ">
+
+                    
+
+                    <div class="overlay"></div>
+
+                    <div class="text text-center p-4">
+
+                        <h3><a href="https://apps.apple.com/us/app/highways-times/id1513609703" target="_blank">Otoyol Süreleri</a></h3>
+
+
+
+                        <span>iOS App Development</span>
+
+						<p>My Own App</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            
+
+            
+
+            <div class="col-md-4">
+
+            	<div class="ftco-animate" style="position: absolute; z-index: 2; margin: 8px;"> 
+
+            		<a href="https://apps.apple.com/tr/app/canmoti/id1483501232" target="_blank"> <i class="btn btn-primary icon-apple"></i></a>
+
+            	</div>
+
+                <div class="project img ftco-animate d-flex justify-content-center align-items-center"
+
+                     style="background-image:url(images/canmoti.png); ">
+
+                    
+
+                    <div class="overlay"></div>
+
+                    <div class="text text-center p-4">
+
+                        <h3><a href="https://apps.apple.com/tr/app/canmoti/id1483501232" target="_blank">Canmoti</a></h3>
+
+
+
+                        <span>iOS App Development</span>
+
+						<p>Freelance</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            
+
+            
+
+            
+
+            <div class="col-md-4">
+
+            	<div class="ftco-animate" style="position: absolute; z-index: 2; margin: 8px;"> 
+
+            		<a href="https://apps.apple.com/tr/app/canvote/id1500649866?l=tr" target="_blank"> <i class="btn btn-primary icon-apple"></i></a>
+
+            	</div>
+
+                <div class="project img ftco-animate d-flex justify-content-center align-items-center"
+
+                     style="background-image:url(images/CanVote.png); ">
+
+                    <div class="overlay"></div>
+
+                    <div class="text text-center p-4">
+
+                        <h3><a href="https://apps.apple.com/tr/app/canvote/id1500649866?l=tr" target="_blank">CanVote</a></h3>
+
+                        <span>iOS App Development</span>
+
+						<p>Freelance</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            
+
+            <div class="col-md-4">
+
+            	<div class="ftco-animate" style="position: absolute; z-index: 2; margin: 8px;"> 
+
+            		<a href="https://apps.apple.com/tr/app/banka-kurlar%C4%B1/id1485019449" target="_blank"> <i class="btn btn-primary icon-apple"></i></a>
+
+            	</div>
+
+                <div class="project img ftco-animate d-flex justify-content-center align-items-center"
+
+                     style="background-image:url(images/BankaKurlari.png); ">
+
+                    <div class="overlay"></div>
+
+                    <div class="text text-center p-4">
+
+                        <h3><a href="https://apps.apple.com/tr/app/banka-kurlar%C4%B1/id1485019449" target="_blank">Banka Kurları</a></h3>
+
+                        <span>iOS App Development</span>
+
+						<p>My Own App</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            
+
+            <div class="col-md-4">
+
+            	<div class="ftco-animate" style="position: absolute; z-index: 2; margin: 8px;"> 
+
+            		<a href="https://apps.apple.com/bh/app/turse-kontrol/id1529850891" target="_blank"> <i class="btn btn-primary icon-apple"></i></a>
+
+            	</div>
+
+                <div class="project img ftco-animate d-flex justify-content-center align-items-center"
+
+                     style="background-image:url(images/Turse-Kontrol.png); ">
+
+                    <div class="overlay"></div>
+
+                    <div class="text text-center p-4">
+
+                        <h3><a href="https://apps.apple.com/bh/app/turse-kontrol/id1529850891" target="_blank">Turse Kontrol</a></h3>
+
+                        <span>iOS App Development</span>
+
+						<p>Freelance</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            
+
+             <div class="col-md-4">
+
+            	<div class="ftco-animate" style="position: absolute; z-index: 2; margin: 8px;"> 
+
+            		<a href="https://apps.apple.com/bh/app/turse/id1532747618" target="_blank"> <i class="btn btn-primary icon-apple"></i></a>
+
+            	</div>
+
+                <div class="project img ftco-animate d-flex justify-content-center align-items-center"
+
+                     style="background-image:url(images/Turse.png); ">
+
+                    <div class="overlay"></div>
+
+                    <div class="text text-center p-4">
+
+                        <h3><a href="https://apps.apple.com/bh/app/turse/id1532747618" target="_blank">Turse Kaptan</a></h3>
+
+                        <span>iOS App Development</span>
+
+						<p>Freelance</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            
+
+            <div class="col-md-4">
+
+            	<div class="ftco-animate" style="position: absolute; z-index: 2; margin: 8px;"> 
+
+            		<a href="https://apps.apple.com/us/app/sena-denetim/id1498753405" target="_blank"> <i class="btn btn-primary icon-apple"></i></a>
+
+            	</div>
+
+                <div class="project img ftco-animate d-flex justify-content-center align-items-center"
+
+                     style="background-image:url(images/SenaTur.png); ">
+
+                    <div class="overlay"></div>
+
+                    <div class="text text-center p-4">
+
+                        <h3><a href="https://apps.apple.com/us/app/sena-denetim/id1498753405" target="_blank">Sena Denetim</a></h3>
+
+                        <span>iOS App Development</span>
+
+						<p>Freelance</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="col-md-4">
+
+            	<div class="ftco-animate" style="position: absolute; z-index: 2; margin: 8px;"> 
+
+            		<a href="https://apps.apple.com/us/app/sena-rehber/id1502386035" target="_blank"> <i class="btn btn-primary icon-apple"></i></a>
+
+            	</div>
+
+                <div class="project img ftco-animate d-flex justify-content-center align-items-center"
+
+                     style="background-image:url(images/SenaTur.png); ">
+
+                    <div class="overlay"></div>
+
+                    <div class="text text-center p-4">
+
+                        <h3><a href="https://apps.apple.com/us/app/sena-rehber/id1502386035" target="_blank">Sena Rehber</a></h3>
+
+                        <span>iOS App Development</span>
+
+						<p>Freelance</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            
+
+            <div class="col-md-4">
+
+            	<div class="ftco-animate" style="position: absolute; z-index: 2; margin: 8px;"> 
+
+            		<a href="https://apps.apple.com/md/app/sena-tur/id1528766100" target="_blank"> <i class="btn btn-primary icon-apple"></i></a>
+
+            	</div>
+
+                <div class="project img ftco-animate d-flex justify-content-center align-items-center"
+
+                     style="background-image:url(images/SenaTur.png); ">
+
+                    <div class="overlay"></div>
+
+                    <div class="text text-center p-4">
+
+                        <h3><a href="https://apps.apple.com/md/app/sena-tur/id1528766100" target="_blank">Sena Tur</a></h3>
+
+                        <span>iOS App Development</span>
+
+						<p>Freelance</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            
+
+            <div class="col-md-4">
+
+            	<div class="ftco-animate" style="position: absolute; z-index: 2; margin: 8px;"> 
+
+            		<a href="https://apps.apple.com/md/app/sena-yolcu/id1542933665" target="_blank"> <i class="btn btn-primary icon-apple"></i></a>
+
+            	</div>
+
+                <div class="project img ftco-animate d-flex justify-content-center align-items-center"
+
+                     style="background-image:url(images/SenaTur.png); ">
+
+                    <div class="overlay"></div>
+
+                    <div class="text text-center p-4">
+
+                        <h3><a href="https://apps.apple.com/md/app/sena-yolcu/id1542933665" target="_blank">Sena Yolcu</a></h3>
+
+                        <span>iOS App Development</span>
+
+						<p>Freelance</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            
+
+            <div class="col-md-4">
+
+            	<div class="ftco-animate" style="position: absolute; z-index: 2; margin: 8px;"> 
+
+            		<a href="https://apps.apple.com/us/app/golf-digest-schools/id1503417783" target="_blank"> <i class="btn btn-primary icon-apple"></i></a>
+
+            		<a href="https://play.google.com/store/apps/details?id=com.discovery.GolfDigest&hl=en_AU" target="_blank"><i class="btn btn-primary icon-android"></i></a>
+
+            	</div>
+
+                <div class="project img ftco-animate d-flex justify-content-center align-items-center"
+
+                     style="background-image:url(images/GolfDigestSchools.png); ">
+
+                    
+
+                    <div class="overlay"></div>
+
+                    <div class="text text-center p-4">
+
+                        <h3>iOS: <a href="https://apps.apple.com/us/app/golf-digest-schools/id1503417783" target="_blank">Golf Digest Schools</a></h3>
+
+                        <h3>Android: <a href="https://play.google.com/store/apps/details?id=com.discovery.GolfDigest&hl=en_AU" target="_blank">Golf Digest Schools</a></h3>
+
+                        <span>iOS & Android App Development</span>
+
+						<p>Rapsodo Pte. Ltd.</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            
+
+            <div class="col-md-4">
+
+            	<div class="ftco-animate" style="position: absolute; z-index: 2; margin: 8px;"> 
+
+            		<a href="https://apps.apple.com/tr/app/vodafone-yan%C4%B1mda/id489845659?l=tr" target="_blank"> <i class="btn btn-primary icon-apple"></i></a>
+
+            	</div>
+
+                <div class="project img ftco-animate d-flex justify-content-center align-items-center"
+
+                     style="background-image:url(images/vodafone_yanimda.png); ">
+
+                    <div class="overlay"></div>
+
+                    <div class="text text-center p-4">
+
+                        <h3><a href="https://apps.apple.com/tr/app/vodafone-yan%C4%B1mda/id489845659?l=tr" target="_blank">Vodafone Yanımda</a></h3>
+
+                        <span>iOS App Development</span>
+
+						<p>Loodos Tech</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            
+
+            
+
+        </div>
+
+    </div>
+
+    
+
+</section>
+
+
+
+
+
+
+
+<section class="ftco-section" id="blog-section">
+
+    <div class="container">
+
+        <div class="row justify-content-center mb-5 pb-5">
+
+            <div class="col-md-7 heading-section text-center ftco-animate">
+
+                <h1 class="big big-2">Blog</h1>
+
+                <h2 class="mb-4">My Blog</h2>
+
+                <p><a href="https://atakancengizkurt.com" target="_blank"> About iOS, Xcode, Swift  </a></p>
+
+				<p ><a href="https://atakancengizkurt.com" target="_blank" class="btn btn-primary py-3 px-5">Go To Blog</a></p>
+
+				<p ><a href="https://medium.com/@atakancengizkurt" target="_blank" class="btn btn-primary py-3 px-3">Medium</a></p>
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+</section>
+
+
+
+<section class="ftco-section ftco-hireme img" style="background-image: url(images/bg_1.jpg)">
+
+    <div class="overlay"></div>
+
+    <div class="container">
+
+        <div class="row justify-content-center">
+
+            <div class="col-md-7 ftco-animate text-center">
+
+                <h2>I'm <span>Available</span> for new projects</h2>
+
+                <p class="mb-0"><a href="mailto:atakancengizkurt@gmail.com" class="btn btn-primary py-3 px-5">Send Details</a></p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+
+    <div class="container">
+
+        <div class="row justify-content-center mb-5 pb-3">
+
+            <div class="col-md-7 heading-section text-center ftco-animate">
+
+                <h1 class="big big-2">Contact</h1>
+
+                <h2 class="mb-4">Contact Me</h2>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="row d-flex contact-info mb-5">
+
+            <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+
+                <div class="align-self-stretch box text-center p-4 shadow">
+
+                    <div class="icon d-flex align-items-center justify-content-center">
+
+                        <span class="icon-map-signs"></span>
+
+                    </div>
+
+                    <div>
+
+                        <h3 class="mb-4">Address</h3>
+
+                        <p>İzmir, TURKEY</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+
+                <div class="align-self-stretch box text-center p-4 shadow">
+
+                    <div class="icon d-flex align-items-center justify-content-center">
+
+                        <span class="icon-phone2"></span>
+
+                    </div>
+
+                    <div>
+
+                        <h3 class="mb-4">Contact Number</h3>
+
+                        <p><a href="tel://+905066564825">+90-506-656-48-25</a></p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+
+                <div class="align-self-stretch box text-center p-4 shadow">
+
+                    <div class="icon d-flex align-items-center justify-content-center">
+
+                        <span class="icon-paper-plane"></span>
+
+                    </div>
+
+                    <div>
+
+                        <h3 class="mb-4">Email Address</h3>
+
+                        <p><a href="mailto:atakancengizkurt@gmail.com">Send E-mail</a></p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+
+                <div class="align-self-stretch box text-center p-4 shadow">
+
+                    <div class="icon d-flex align-items-center justify-content-center">
+
+                        <span class="icon-globe"></span>
+
+                    </div>
+
+                    <div>
+
+                        <h3 class="mb-4">Website</h3>
+
+                        <p><a href="https://www.atakancengizkurt.com.tr" target="_blank">atakancengizkurt.com.tr</a></p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+<footer class="ftco-footer ftco-section">
+
+    <div class="container">
+
+        <div class="row mb-5">
+
+            <div class="col-md">
+
+                <div class="ftco-footer-widget mb-4">
+
+                    <h2 class="ftco-heading-2">About</h2>
+
+                    <p>Atakan Cengiz KURT </p>
+
+					<p>iOS Developer</p>
+
+					<p>Mobile Developer</p>
+
+					<ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+
+                        <li class="ftco-animate"><a href="https://www.linkedin.com/in/atakancengizkurt/" target="_blank"><span
+
+                                class="icon-linkedin"></span></a></li>
+
+                        <li class="ftco-animate"><a href="https://apps.apple.com/us/developer/atakan-cengiz-kurt/id1480593937" target="_blank"><span
+
+                                class="icon-apple"></span></a></li>
+
+                        <li class="ftco-animate"><a href="https://play.google.com/store/apps/developer?id=Atakan+Cengiz+KURT" target="_blank"><span
+
+                                class="icon-android"></span></a></li>
+
+
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <div class="col-md">
+
+                <div class="ftco-footer-widget mb-4 ml-md-4">
+
+                    <h2 class="ftco-heading-2">Links</h2>
+
+                    <ul class="list-unstyled">
+
+                        <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Home</a></li>
+
+                        <li><a href="#about-section"><span class="icon-long-arrow-right mr-2"></span>About</a></li>
+
+                        <li><a href="#services-section"><span class="icon-long-arrow-right mr-2"></span>Services</a></li>
+
+                        <li><a href="#projects-section"><span class="icon-long-arrow-right mr-2"></span>Portfolio</a></li>
+
+                        <li><a href="#contact-section"><span class="icon-long-arrow-right mr-2"></span>Contact</a></li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <div class="col-md">
+
+                <div class="ftco-footer-widget mb-4">
+
+                    <h2 class="ftco-heading-2">Services</h2>
+
+                    <ul class="list-unstyled">
+
+                        <li><a href="#services-section"><span class="icon-long-arrow-right mr-2"></span>App Development</a></li>
+
+                        <li><a href="#services-section"><span class="icon-long-arrow-right mr-2"></span>App Design</a></li>
+
+                        <li><a href="#services-section"><span class="icon-long-arrow-right mr-2"></span>ASO</a></li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <div class="col-md">
+
+                <div class="ftco-footer-widget mb-4">
+
+                    <h2 class="ftco-heading-2">Have a Questions?</h2>
+
+                    <div class="block-23 mb-3">
+
+                        <ul>
+
+
+
+                            <li><a href="mailto: atakancengizkurt@gmail.com"><span class="icon icon-envelope"></span>
+
+                                &nbsp; <span class="text">atakancengizkurt@gmail.com</span></a></li>
+
+                                
+
+                                <li><a href="https://www.karacanta.av.tr"><span class="icon icon-gavel"></span>izmir avukat</a></li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-12 text-center">
+
+
+
+                <p>
+
+                    Copyright &copy;<script>document.write(new Date().getFullYear());</script>
+
+                    All rights reserved | Atakan Cengiz KURT
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+
+
+<!-- loader -->
+
+<div id="ftco-loader" class="show fullscreen">
+
+    <svg class="circular" width="48px" height="48px">
+
+        <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/>
+
+        <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+
+                stroke="#F96D00"/>
+
+    </svg>
+
+</div>
+
+
+
+
+
+<script src="js/jquery.min.js"></script>
+
+<script src="js/jquery-migrate-3.0.1.min.js"></script>
+
+<script src="js/popper.min.js"></script>
+
+<script src="js/bootstrap.min.js"></script>
+
+<script src="js/jquery.easing.1.3.js"></script>
+
+<script src="js/jquery.waypoints.min.js"></script>
+
+<script src="js/jquery.stellar.min.js"></script>
+
+<script src="js/owl.carousel.min.js"></script>
+
+<script src="js/jquery.magnific-popup.min.js"></script>
+
+<script src="js/aos.js"></script>
+
+<script src="js/jquery.animateNumber.min.js"></script>
+
+<script src="js/scrollax.min.js"></script>
+
+
+
+<script src="js/main.js"></script>
+
+
+
 </body>
+
 </html>
